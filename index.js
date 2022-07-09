@@ -1,7 +1,7 @@
 $("form").submit(function (e) {
     e.preventDefault()
     var query = $("#search").val()
-    var API_KEY = 'f5f717749812d8d2fa974f1c0d11370ca039e4848e2731225e0679cfbc636a5d'
+    var API_KEY = '3ae85a2167316a4a8799634daaa34a50a19c7b9c075bae5478f414f67f596aa1'
 
     var url = `https://serpapi.com/search.json?engine=google&q=${query}&api_key=${API_KEY}`
     $.get(url, function (data) {
