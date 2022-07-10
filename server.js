@@ -12,7 +12,9 @@ app.get('/', (req, res) => {
 
 const params = {
   engine: "google",
-  q: "Coffee",
+  gl: "us",
+  hl: "en",
+  q: query //need to get query from index.js
 };
 
 const callback = function(data) {
